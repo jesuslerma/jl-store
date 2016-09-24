@@ -32,12 +32,12 @@
     <%= f.select :category_id, @categories.collect{|category| [category.name, category.id]}, {include_blank: true} %>
   </div>
   <div class="field">
-    <%= f.label :product_type %><br>
-    <%= f.number_field :product_type %>
+    <%= f.label :product_type_id %><br>
+    <%= f.select :product_type_id, @product_types.collect{|category| [category.name, category.id]}, {include_blank: true} %>
   </div>
   <div class="field">
     <%= f.label :vendor_id %><br>
-    <%= f.number_field :vendor_id %>
+    <%= f.select :vendor_id, @vendors.collect{|category| [category.name, category.id]}, {include_blank: true} %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -29,7 +29,7 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'Carts', carts_path%></li>
+        <li><%= link_to "Carts #{current_user.email}", carts_path%></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
